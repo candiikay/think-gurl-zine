@@ -1,0 +1,282 @@
+# Think GURL Interactive Zine - Git Ignore File
+
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# Build outputs
+dist/
+build/
+out/
+.next/
+.nuxt/
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+*.lcov
+
+# nyc test coverage
+.nyc_output
+
+# Dependency directories
+jspm_packages/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# parcel-bundler cache (https://parceljs.org/)
+.cache
+.parcel-cache
+
+# next.js build output
+.next
+
+# nuxt.js build output
+.nuxt
+
+# vuepress build output
+.vuepress/dist
+
+# Serverless directories
+.serverless/
+
+# FuseBox cache
+.fusebox/
+
+# DynamoDB Local files
+.dynamodb/
+
+# TernJS port file
+.tern-port
+
+# Stores VSCode versions used for testing VSCode extensions
+.vscode-test
+
+# Temporary folders
+tmp/
+temp/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Backup files
+*.bak
+*.backup
+*.old
+*.orig
+*.rej
+
+# Archive files
+*.zip
+*.tar.gz
+*.rar
+
+# Large media files (uncomment if needed)
+# *.mp4
+# *.mov
+# *.avi
+# *.mkv
+# *.wmv
+
+# Uncompressed images (keep optimized versions)
+# *.psd
+# *.ai
+# *.sketch
+# *.fig
+
+# Development and testing
+.nyc_output/
+coverage/
+test-results/
+playwright-report/
+test-results.xml
+
+# Deployment
+.vercel
+.netlify
+.firebase
+.aws
+
+# Local development
+.local
+.cache
+
+# Documentation build
+docs/_build/
+site/
+
+# Jekyll
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Hexo
+db.json
+.deploy*/
+
+# Git
+*.orig
+
+# Webpack
+webpack-stats.json
+
+# Sass
+.sass-cache/
+*.css.map
+*.sass.map
+*.scss.map
+
+# Less
+*.less.map
+
+# Stylus
+*.styl.map
+
+# PostCSS
+*.postcss.map
+
+# Source maps
+*.map
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Local Netlify folder
+.netlify
+
+# Vercel
+.vercel
+
+# Firebase
+.firebase/
+firebase-debug.log
+firebase-debug.*.log
+
+# Local development
+.local/
+.cache/
+
+# Test files (if you want to exclude them)
+# test/
+# tests/
+# __tests__/
+# *.test.js
+# *.test.ts
+# *.spec.js
+# *.spec.ts
+
+# Documentation (if auto-generated)
+# docs/build/
+# docs/_build/
+
+# Analytics and tracking (if sensitive)
+# analytics/
+# tracking/
+
+# User uploads (if any)
+# uploads/
+# user-content/
+
+# Database files (if using local databases)
+# *.db
+# *.sqlite
+# *.sqlite3
+
+# Configuration files with secrets
+config/local.json
+config/production.json
+secrets.json
+
+# Generated files
+generated/
+auto-generated/
+
+# Build tools
+.grunt/
+.gulp/
+.webpack/
+
+# Package managers
+.pnp
+.pnp.js
+.yarn/
+.pnpm-debug.log*
+
+# Optional: Exclude large asset files during development
+# Uncomment these if you want to exclude large files during development
+# src/assets/images/raw/
+# src/assets/videos/
+# src/assets/audio/raw/
+
+# Keep important files
+!src/assets/images/README.md
+!src/assets/fonts/README.md
+!src/assets/icons/README.md
+!src/assets/audio/README.md
+!package.json
+!README.md
+!PRD.md
+!CONTRIBUTING.md

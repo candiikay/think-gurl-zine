@@ -1,0 +1,67 @@
+{
+  "name": "think-gurl-zine",
+  "version": "1.0.0",
+  "description": "An interactive digital zine exploring technology, feminism, and agency through immersive storytelling and community engagement",
+  "main": "src/index.html",
+  "scripts": {
+    "start": "npx serve src -p 3000",
+    "dev": "npx serve src -p 3000",
+    "build": "echo 'No build step required for static site'",
+    "preview": "npx serve src -p 3000",
+    "deploy": "vercel --prod",
+    "deploy:preview": "vercel",
+    "lint": "npx eslint src/**/*.js",
+    "lint:css": "npx stylelint src/**/*.css",
+    "format": "npx prettier --write src/**/*.{html,css,js,md}",
+    "format:check": "npx prettier --check src/**/*.{html,css,js,md}",
+    "test": "echo 'No tests specified'",
+    "validate": "npx html-validate src/**/*.html",
+    "optimize": "npx imagemin src/assets/images/* --out-dir=src/assets/images/optimized",
+    "serve": "python -m http.server 8000 --directory src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/think-gurl-zine.git"
+  },
+  "keywords": [
+    "feminism",
+    "technology",
+    "zine",
+    "interactive",
+    "digital-media",
+    "community",
+    "activism",
+    "web-design",
+    "accessibility"
+  ],
+  "author": "Think GURL Collective",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/your-username/think-gurl-zine/issues"
+  },
+  "homepage": "https://think-gurl-zine.vercel.app",
+  "devDependencies": {
+    "@vercel/cli": "^32.0.0",
+    "eslint": "^8.0.0",
+    "html-validate": "^8.0.0",
+    "imagemin": "^8.0.0",
+    "imagemin-webp": "^8.0.0",
+    "prettier": "^3.0.0",
+    "serve": "^14.0.0",
+    "stylelint": "^15.0.0",
+    "stylelint-config-standard": "^34.0.0"
+  },
+  "dependencies": {
+    "turn.js": "^4.1.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not ie 11"
+  ]
+}
