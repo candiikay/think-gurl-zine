@@ -1,0 +1,227 @@
+/* Think GURL Interactive Zine - Global Styles */
+
+/* CSS Custom Properties - Design System */
+:root {
+  /* Color Palette */
+  --lavender: #E6E6FA;
+  --pink: #FFB6C1;
+  --aqua: #00FFFF;
+  --dark-purple: #4B0082;
+  --white: #FFFFFF;
+  --black: #000000;
+  
+  /* Typography */
+  --font-heading: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  
+  /* Spacing */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  
+  /* Border Radius */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.15);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  line-height: 1.6;
+  color: var(--black);
+  background: linear-gradient(135deg, var(--lavender) 0%, var(--pink) 50%, var(--aqua) 100%);
+  min-height: 100vh;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: var(--space-md);
+}
+
+h1 {
+  font-size: 3rem;
+  color: var(--dark-purple);
+}
+
+h2 {
+  font-size: 2.25rem;
+  color: var(--dark-purple);
+}
+
+h3 {
+  font-size: 1.875rem;
+  color: var(--dark-purple);
+}
+
+p {
+  margin-bottom: var(--space-md);
+  font-size: 1.125rem;
+}
+
+/* Layout */
+.zine-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--space-xl);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.zine-header {
+  text-align: center;
+  margin-bottom: var(--space-2xl);
+  padding: var(--space-xl);
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+}
+
+.zine-title {
+  font-size: 4rem;
+  margin-bottom: var(--space-sm);
+  background: linear-gradient(45deg, var(--dark-purple), var(--pink));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.zine-subtitle {
+  font-size: 1.5rem;
+  color: var(--dark-purple);
+  margin-bottom: var(--space-sm);
+  font-weight: 600;
+}
+
+.zine-tagline {
+  font-size: 1.125rem;
+  color: var(--dark-purple);
+  opacity: 0.8;
+}
+
+.zine-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--space-2xl);
+}
+
+.coming-soon {
+  background: rgba(255, 255, 255, 0.95);
+  padding: var(--space-2xl);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  text-align: center;
+  max-width: 600px;
+}
+
+.coming-soon h2 {
+  font-size: 2.5rem;
+  margin-bottom: var(--space-lg);
+  color: var(--dark-purple);
+}
+
+.coming-soon ul {
+  list-style: none;
+  margin: var(--space-lg) 0;
+}
+
+.coming-soon li {
+  padding: var(--space-sm);
+  font-size: 1.125rem;
+  margin-bottom: var(--space-sm);
+}
+
+.zine-footer {
+  text-align: center;
+  padding: var(--space-lg);
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+}
+
+.zine-footer p {
+  color: var(--dark-purple);
+  font-weight: 500;
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .zine-container {
+    padding: var(--space-md);
+  }
+  
+  .zine-title {
+    font-size: 2.5rem;
+  }
+  
+  .zine-subtitle {
+    font-size: 1.25rem;
+  }
+  
+  .coming-soon {
+    padding: var(--space-lg);
+  }
+  
+  .coming-soon h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .zine-title {
+    font-size: 2rem;
+  }
+  
+  .coming-soon h2 {
+    font-size: 1.75rem;
+  }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* Focus styles for keyboard navigation */
+:focus {
+  outline: 2px solid var(--aqua);
+  outline-offset: 2px;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  :root {
+    --lavender: #FFFFFF;
+    --pink: #FFFFFF;
+    --aqua: #00FFFF;
+    --dark-purple: #000000;
+  }
+}
