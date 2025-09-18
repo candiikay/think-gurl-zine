@@ -7,16 +7,6 @@
       "use": "@vercel/static"
     }
   ],
-  "routes": [
-    {
-      "src": "/",
-      "dest": "/src/index.html"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/src/$1"
-    }
-  ],
   "headers": [
     {
       "source": "/(.*)",
@@ -58,11 +48,14 @@
       ]
     }
   ],
-  "redirects": [
+  "rewrites": [
     {
       "source": "/home",
-      "destination": "/",
-      "permanent": true
+      "destination": "/"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/src/$1"
     }
   ],
   "env": {
