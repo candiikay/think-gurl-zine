@@ -20,29 +20,159 @@
 </head>
 <body>
     <main class="zine-container">
-        <header class="zine-header">
-            <h1 class="zine-title">Think GURL</h1>
-            <p class="zine-subtitle">Edition 01: Algorithms & Agency</p>
-            <p class="zine-tagline">An interactive exploration of technology, feminism, and digital culture</p>
-        </header>
-
-        <section class="zine-content">
-            <div class="coming-soon">
-                <h2>🚀 Coming Soon</h2>
-                <p>We're building something amazing! This interactive zine will feature:</p>
-                <ul>
-                    <li>📖 Interactive flipbook experience</li>
-                    <li>💭 Community commentary system</li>
-                    <li>🎨 Vaporwave-inspired feminist design</li>
-                    <li>📱 Mobile-responsive layout</li>
-                </ul>
-                <p>Stay tuned for the full experience!</p>
+        <!-- Flipbook Container -->
+        <div id="flipbook" class="flipbook-container">
+            <!-- Page 1: Cover -->
+            <div class="page page-cover">
+                <div class="page-content">
+                    <h1 class="zine-title">Think GURL</h1>
+                    <p class="zine-subtitle">Edition 01: Algorithms & Agency</p>
+                    <p class="zine-tagline">An interactive exploration of technology, feminism, and digital culture</p>
+                    <div class="cover-graphic">
+                        <div class="gradient-circle"></div>
+                    </div>
+                </div>
             </div>
-        </section>
 
-        <footer class="zine-footer">
-            <p>&copy; 2025 Think GURL Collective. Challenging algorithms, building agency.</p>
-        </footer>
+            <!-- Page 2: Manifesto -->
+            <div class="page">
+                <div class="page-content">
+                    <h2 class="page-title">Manifesto</h2>
+                    <div class="article-content">
+                        <p class="lead">In a world where algorithms shape our reality, we reclaim our agency through critical thinking and collective action.</p>
+                        <p>This zine is our declaration of digital independence—a space where feminist perspectives challenge the status quo and envision new possibilities for technology and society.</p>
+                        <blockquote>
+                            "The personal is political, and in the digital age, the personal is algorithmic."
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Page 3: Dating Apps -->
+            <div class="page">
+                <div class="page-content">
+                    <h2 class="page-title">Dating Apps</h2>
+                    <div class="article-content">
+                        <p class="lead">How algorithmic bias shapes our relationships and self-perception.</p>
+                        <p>Dating apps promise connection but often deliver commodification. We explore how these platforms reinforce harmful stereotypes while claiming to democratize romance.</p>
+                        <div class="highlight-box">
+                            <h3>Key Issues:</h3>
+                            <ul>
+                                <li>Racial bias in matching algorithms</li>
+                                <li>Gender stereotyping in profile systems</li>
+                                <li>Data privacy and surveillance</li>
+                                <li>Monetization of human connection</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Page 4: Hygiene -->
+            <div class="page">
+                <div class="page-content">
+                    <h2 class="page-title">Digital Hygiene</h2>
+                    <div class="article-content">
+                        <p class="lead">Self-care in the age of constant connectivity.</p>
+                        <p>Digital wellness isn't just about screen time—it's about creating boundaries, protecting our mental health, and reclaiming our attention from algorithmic manipulation.</p>
+                        <div class="practical-tips">
+                            <h3>Practical Tips:</h3>
+                            <ul>
+                                <li>Set intentional boundaries with technology</li>
+                                <li>Curate your feeds mindfully</li>
+                                <li>Practice digital minimalism</li>
+                                <li>Engage in offline activism</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Page 5: Intimacy -->
+            <div class="page">
+                <div class="page-content">
+                    <h2 class="page-title">Intimacy</h2>
+                    <div class="article-content">
+                        <p class="lead">Technology's impact on human connection and vulnerability.</p>
+                        <p>How do we maintain authentic intimacy when our relationships are mediated by screens, algorithms, and corporate platforms?</p>
+                        <blockquote>
+                            "True connection requires vulnerability, but vulnerability requires safety—something algorithms cannot provide."
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Page 6: Politics -->
+            <div class="page">
+                <div class="page-content">
+                    <h2 class="page-title">Digital Politics</h2>
+                    <div class="article-content">
+                        <p class="lead">Feminist organizing in the digital age.</p>
+                        <p>From hashtag activism to decentralized organizing, we explore how technology can amplify feminist voices while navigating the challenges of surveillance and co-optation.</p>
+                        <div class="call-to-action">
+                            <h3>Join the Movement</h3>
+                            <p>Connect with us and continue the conversation about algorithms and agency.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Page 7: Closing -->
+            <div class="page page-closing">
+                <div class="page-content">
+                    <h2 class="page-title">The Future is Feminist</h2>
+                    <div class="article-content">
+                        <p class="lead">This is just the beginning of our conversation about technology, feminism, and agency.</p>
+                        <p>Together, we can build a digital world that serves humanity rather than exploiting it. The algorithms may be powerful, but our collective wisdom is stronger.</p>
+                        <div class="closing-credits">
+                            <p><strong>Think GURL Collective</strong></p>
+                            <p>Challenging algorithms, building agency</p>
+                            <p>&copy; 2025</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Page 8: Back Cover -->
+            <div class="page page-back-cover">
+                <div class="page-content">
+                    <div class="back-cover-content">
+                        <h3>Connect With Us</h3>
+                        <div class="social-links">
+                            <a href="#" class="social-link">Twitter</a>
+                            <a href="#" class="social-link">Instagram</a>
+                            <a href="#" class="social-link">Email</a>
+                        </div>
+                        <p class="back-cover-tagline">The revolution will be digitized, but it will also be feminist.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation Controls -->
+        <div class="flipbook-controls">
+            <button id="prevBtn" class="nav-btn prev-btn" aria-label="Previous page">
+                <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 12H5m7-7l-7 7 7 7"/>
+                </svg>
+            </button>
+            <div class="page-indicator">
+                <span id="currentPage">1</span> / <span id="totalPages">8</span>
+            </div>
+            <button id="nextBtn" class="nav-btn next-btn" aria-label="Next page">
+                <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14m-7-7l7 7-7 7"/>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Loading Screen -->
+        <div id="loadingScreen" class="loading-screen">
+            <div class="loading-content">
+                <div class="loading-spinner"></div>
+                <p>Loading your zine...</p>
+            </div>
+        </div>
     </main>
 
     <!-- Scripts -->

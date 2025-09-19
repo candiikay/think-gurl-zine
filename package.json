@@ -41,7 +41,7 @@
   },
   "homepage": "https://think-gurl-zine.vercel.app",
   "devDependencies": {
-    "@vercel/cli": "^32.0.0",
+    "vercel": "^32.0.0",
     "eslint": "^8.0.0",
     "html-validate": "^8.0.0",
     "imagemin": "^8.0.0",
@@ -52,7 +52,7 @@
     "stylelint-config-standard": "^34.0.0"
   },
   "dependencies": {
-    "turn.js": "^4.1.0"
+    "turnjs": "^4.1.0"
   },
   "engines": {
     "node": ">=18.0.0",
