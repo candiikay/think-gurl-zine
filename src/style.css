@@ -15,7 +15,7 @@
   --gray-medium: #d3d3d3;
   
   /* Typography - Grug Style */
-  --font-grug: 'Caveat', cursive;
+  --font-grug: 'Caveat', cursive, Arial, sans-serif;
   --font-system: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   --font-mono: 'Courier New', monospace;
   
